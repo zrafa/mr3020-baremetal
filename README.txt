@@ -2,13 +2,13 @@
 Programa baremetal minimo para ejecutar en un tplink mr3020
 ===========================================================
 
-'''
+´´´
 /*
  * Copyright (C) 2015 Facultad de Informática Universidad Nacional del Comahue.
  * Rodolfo del Castillo <rdc@fi.uncoma.edu.ar>
  * Rafael Ignacio Zurita <rafa@fi.uncoma.edu.ar>
  */
-'''
+´´´
 
 Enlaces iniciales del hello world para MIPS :
 
@@ -27,7 +27,7 @@ Toolchain de OpenWrt.
 Instrucciones de compilacion y ejecución
 ----------------------------------------
 	
-'''
+```
 git clone https://github.com/zrafa/mr3020-baremetal.git
 cd mr3020-baremetal
 
@@ -45,9 +45,12 @@ tftpboot 0x80000000 baremetalmr3020.flash.bin
 erase 0x9f020000 +0x3c0000
 cp.b 0x80000000 0x9f020000 0x3c0000
 bootm 9f020000
-'''
+```
 
 
+
+Algunas consideraciones
+-----------------------
 
 make blink   
 	General en el directorio blink-serial un main.c para generar un blink
