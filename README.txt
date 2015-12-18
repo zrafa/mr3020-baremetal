@@ -13,7 +13,8 @@ Enlaces iniciales del hello world para MIPS :
 	http://linux.junsun.net/porting-howto/src/barebone/
 	https://www.linux-mips.org/wiki/Linux/MIPS_Porting_Guide
 
-Ese programa hello world para MIPS fueron adaptadas para el mr3020.
+El programa original hello world para MIPS de los enlaces fué adaptado para el mr3020.
+Tambien existe un programa que realiza un blink.
 
 
 Requisitos
