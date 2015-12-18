@@ -2,6 +2,14 @@
 Programa baremetal minimo para ejecutar en un tplink mr3020
 ===========================================================
 
+'''
+/*
+ * Copyright (C) 2015 Facultad de Informática Universidad Nacional del Comahue.
+ * Rodolfo del Castillo <rdc@fi.uncoma.edu.ar>
+ * Rafael Ignacio Zurita <rafa@fi.uncoma.edu.ar>
+ */
+'''
+
 Enlaces iniciales del hello world para MIPS :
 
 	http://linux.junsun.net/porting-howto/src/barebone/
@@ -13,7 +21,7 @@ Ese programa hello world para MIPS fueron adaptadas para el mr3020.
 Requisitos
 ----------
 
-Toolchain de openwrt.
+Toolchain de OpenWrt.
 
 
 Instrucciones de compilacion y ejecución
