@@ -28,7 +28,8 @@ Ejemplo de Instrucciones de compilacion y ejecución
 git clone https://github.com/zrafa/mr3020-baremetal.git
 cd mr3020-baremetal
 
-# Ajustar el archivo env.sh para que en PATH se encuentre su toolchain de openwrt
+# Ajustar el archivo env.sh para que en PATH se encuentre su toolchain de openwrt uclibc
+. env.sh      # O establezca en su variable PATH el directorio con los binarios uclibc de openwrt
 
 make blink
 make all
@@ -36,7 +37,7 @@ make all
 # Copiar baremetalmr3020.flash.bin al servidor tftp
 
 
-# Ahora, desde uboot en mr3020
+# Como ejecutar : desde uboot en mr3020
 
 tftpboot 0x80000000 baremetalmr3020.flash.bin
 erase 0x9f020000 +0x3c0000
